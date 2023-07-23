@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>PhotoGallery.com</title>
+	<link rel="stylesheet" type="text/css" href="second.css">
+</head>
+
+<body>
+    <div id="header"></div>
+	<h3 id="header-text">✨ Beautiful Images On Your Browser ✨</h3>
+    
+	<h1 id="main-heading"> Responsive Image Gallery </h1>
+	<h2 id="sub-heading"> A JQUERY IMAGE GALLERY WITH A THUMBNAIL CAROUSEL </h2>
+	<h3 id="view"> Change View </h3>
+     
+    <a href="index2.html">
+	<img src="single.png" alt="single-image-view-icon" class="image-position1" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"></a>
+
+    <a href="index.html">
+    <img src="multiple.png" alt="multiple-image-view-icon" class="image-position2" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"></a>
+
+<div class="slides">
+
+         <img src="image1.jpeg" alt="apple-img" class="image-slide active" id="image-1">
+         <img src="image2.jpeg" alt="juice-glasss-img" class="image-slide" id="image-2">
+         <img src="image3.jpeg" alt="grapes-img" class="image-slide" id="image-3">
+         <img src="image4.jpeg" alt="single-apple-img" class="image-slide" id="image-4"> 
+         <img src="image5.jpeg" alt="blueberries-img" class="image-slide" id="image-5">
+         <img src="image6.jpeg" alt="fruit-plant-img" class="image-slide" id="image-6">
+         <img src="image7.jpeg" alt="strawberry-with-blue-bg-img" class="image-slide" id="image-7">
+         <img src="image8.jpeg" alt="strawberry-img" class="image-slide" id="image-8">
+         <img src="image9.jpeg" alt="apple-tree-img" class="image-slide" id="image-9">
+         <img src="image10.jpeg" alt="fruits-vegetables-img" class="image-slide" id="image-10">
+</div>
+
+<div id="bck"></div>
+<div id="arrow-bck"></div>
+<div id="arrow-next"></div>
+
+<img src="next.png" alt="arrow-next" id="next" onclick="changeSlide(1)">
+<img src="prev.png" alt="arrow-prev" id="prev" onclick="changeSlide(-1)">
+
+<script src="gallery.js"></script>
+
+<footer class="footer">
+    	<div>
+    		Made With Love❤️ By R Revathi 
+        </div>
+</footer>
+
+</body>
+</html>
